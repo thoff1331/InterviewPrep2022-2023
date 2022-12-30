@@ -1,0 +1,192 @@
+What is JSX?: 
+
+JSX:  JSX is a syntax extension to JavaScript. It is used with React to describe what the user interface should look like. By using JSX, we can write HTML structures in the same file that contains JavaScript code.
+
+What are Components?: 
+
+Components: Components are the building blocks of any React application, and a single app usually consists of multiple components. It splits the user interface into independent, reusable parts that can be processed separately.
+
+what is the virtual DOM?: 
+
+Virtual DOM: React keeps a lightweight representation of the real DOM in the memory, and that is known as the virtual DOM. When the state of an object changes, virtual DOM changes only that object in the real DOM, rather than updating all the objects.
+DOM stands for Document Object Model. The DOM represents an HTML document with a logical tree structure. Each branch of the tree ends in a node, and each node contains objects.
+
+what is one-way data-binding?:
+
+React’s one-way data binding keeps everything modular and fast. A unidirectional data flow means that when designing a React app, you often nest child components within parent components.
+
+React High performance?: 
+
+React updates only those components that have changed, rather than updating all the components at once. This results in much faster web applications
+
+Can web browsers read JSX directly? 
+
+Web browsers cannot read JSX directly. This is because they are built to only read regular JS objects and JSX is not a regular JavaScript object 
+For a web browser to read a JSX file, the file needs to be transformed into a regular JavaScript object. For this, we use Babel
+
+What is an event in React?
+An event is an action that a user or system may trigger, such as pressing a key, a mouse click, etc.
+
+React events are named using camelCase, rather than lowercase in HTML.
+With JSX, you pass a function as the event handler, rather than a string in HTML.
+
+What are synthetic events in React?
+Synthetic events combine the response of different browser's native events into one API, ensuring that the events are consistent across different browsers.
+The application is consistent regardless of the browser it is running in. Here, preventDefault is a synthetic event.
+
+Why is there a need for using keys in Lists?
+Keys are very important in lists for the following reasons:
+
+A key is a unique identifier and it is used to identify which items have changed, been updated or deleted from the lists
+It also helps to determine which components need to be re-rendered instead of re-rendering all the components every time. Therefore, it increases performance, as only the updated components are re-rendered
+
+What is an arrow function and how is it used in React?
+
+An arrow function is a short way of writing a function to React.
+It is unnecessary to bind ‘this’ inside the constructor when using an arrow function. This prevents bugs caused by the use of ‘this’ in React callbacks.
+
+REACT VS REACT-NATIVE
+
+React 
+- 2013
+- web platform 
+- uses html 
+- uses css 
+- prerequq js,htnl,css
+
+Native 
+- 2015
+- mobile,androidios platform 
+- no html
+- no css 
+react is  prereq 
+
+
+
+REACT VS ANGULAR 
+react 
+- Facebook
+- view layer of mvc 
+- virtual dom
+- uni-directional data flow 
+- server side rendering 
+- faster due to virtual dom 
+
+Angular 
+- google 
+- complete mvc 
+- real dom 
+-bi directional data flow 
+- client side renedering 
+- slow
+
+
+COMMPONENTS IN REACT 
+
+ FUNCTIONAL/STATELESS - These types of components have no state of their own and only contain render methods, and therefore are also called stateless components. They may derive data from other components as props (properties).
+
+class components - These types of components can hold and manage their own state and have a separate render method to return JSX on the screen. They are also called Stateful components as they can have a state.
+
+What is the use of render() in React?
+
+It is required for each component to have a render() function. This function returns the HTML, which is to be displayed in the component.
+If you need to render more than one element, all of the elements must be inside one parent tag like <div>, <form>.
+
+
+ What is a state in React?
+
+The state is a built-in React object that is used to contain data or information about the component. The state in a component can change over time, and whenever it changes, the component re-renders.
+The change in state can happen as a response to user action or system-generated events. It determines the behavior of the component and how it will render.
+
+ What are props in React?
+Props are short for Properties. It is a React built-in object that stores the value of attributes of a tag and works similarly to HTML attributes.
+Props provide a way to pass data from one component to another component. Props are passed to the component in the same way as arguments are passed in a function.
+
+
+STATE VS PROPS 
+
+state 
+
+- holds info about components 
+- is mutable 
+- can be changed 
+- child cannot access 
+stateless components cannot have 
+
+PROPS 
+- data from one component to another 
+- are not changeable 
+- child can access 
+stateless can have 
+
+What is a higher-order component in React?
+A higher-order component acts as a container for other components. This helps to keep components simple and enables re-usability. They are generally used when multiple components have to use a common logic. 
+
+STATELESS VS CLASS 
+
+FUNCTIONAL
+ - cannot hold or manage state 
+- simple 
+- no lifecycle metthods 
+- not reuseable 
+
+CLASS 
+- can hold and manage state 
+- complex 
+- all lifecycle methods 
+- can be reused 
+
+Explain the lifecycle methods of components.
+
+getInitialState(): This is executed before the creation of the component.
+componentDidMount(): Is executed when the component gets rendered and placed on the DOM.
+shouldComponentUpdate(): Is invoked when a component determines changes to the DOM and returns a “true” or “false” value based on certain conditions.
+componentDidUpdate(): Is invoked immediately after rendering takes place.
+componentWillUnmount(): Is invoked immediately before a component is destroyed and unmounted permanently.
+
+
+    REDUX 
+
+What is Redux?
+
+Redux is an open-source, JavaScript library used to manage the application state. React uses Redux to build the user interface. It is a predictable state container for JavaScript applications and is used for the entire application’s state management.
+
+Store: Holds the state of the application.
+Action: The source information for the store.
+Reducer: Specifies how the application's state changes in response to actions sent to the store.
+
+What is React Router?
+React Router is a routing library built on top of React, which is used to create routes in a React application. This is one of the most frequently asked react interview questions.
+
+36. Why do we need to React Router?
+It maintains consistent structure and behavior and is used to develop single-page web applications. 
+Enables multiple views in a single application by defining multiple routes in the React application.
+
+
+ways to style react 
+
+- inline
+- a styles object 
+- stylecsheet 
+
+
+REACT HOOKS
+- Hooks allow the use of state inside functional components but do not work in class components 
+
+Global State 
+
+
+The new React Context API, introduced with React v.16.3, allows us to pass data through our component trees, giving our components the ability to communicate and share data at different levels. In this tutorial, we’ll explore how we can use React Context to avoid prop drilling. First, we’ll cover what prop drilling is and why we should avoid it.
+
+
+what are refs in react?
+
+Ref means just reference, so it can be a reference to anything (DOM node, Javascript value, etc). The useRef hook returns a mutable object which doesn’t re-render the component when it’s changed. Think it like useState, but unlike useState, doesn’t trigger re-render of the component. The object that useRef returns have a current property that can hold any modifiable value.
+
+The useRef Hook allows you to persist values between renders.
+It can be used to store a mutable value that does not cause a re-render when updated.
+It can be used to access a DOM element directly.
+
+
+
+React Fragments - let you group a list of children without adding extra nodes the DOM

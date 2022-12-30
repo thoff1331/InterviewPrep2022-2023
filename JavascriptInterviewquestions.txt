@@ -1,0 +1,28 @@
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.
+
+
+The closure is a function that accesses its lexical scope even executed outside of its lexical scope.
+
+
+Async/Await is used to work with promises in asynchronous functions. It is basically syntactic sugar for promises. It is just a wrapper to restyle code and make promises easier to read and use. It makes asynchronous code look more like synchronous/procedural code, which is easier to understand.
+
+await can only be used in async functions. It is used for calling an async function and waits for it to resolve or reject. await blocks the execution of the code within the async function in which it is located. 
+
+Error Handling in Async/Await: For a successfully resolved promise, we use try and for rejected promise, we use catch. To run a code after the promise has been handled using try or catch, we can .finally() method. The code inside .finally() method runs once regardless of the state of the promise.
+
+
+Promises 
+
+- Promise is an object representing intermediate state of operation which is guaranteed to complete its execution at some point in future.
+- 	Promise has 3 states – resolved, rejected and pending.
+- If the function “fxn1” is to executed after the promise, then promise.then(fxn1) continues execution of the current function after adding the fxn1 call to the callback chain.
+- Error handling is done using .then() and .catch() methods.
+- Promise chains can become difficult to understand sometimes.
+
+Async/Await 
+
+-- syntactic sugar for promises, a wrapper making the code execute more synchronously.
+-- It does not have any states. It returns a promise either resolved or rejected.
+-- If the function “fxn1” is to  be executed after await, then await X() suspends execution of the current function and then fxn1 is executed.
+-- Error handling is done using .try() and .catch() methods.
+--  sometimes.	Using Async/Await makes it easier to read and understand the flow of the program as compared to promise chains.               

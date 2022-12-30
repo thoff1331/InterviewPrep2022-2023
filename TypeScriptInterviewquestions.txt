@@ -1,0 +1,116 @@
+TypeScript is a superset of JavaScript. It is an object-oriented and tightly typed programming language. TypeScript code is transformed to JavaScript, which may be used in any environment that supports JavaScript, including browsers, Node.js, and your own applications.
+
+Advantages of TypeScript
+
+Problems are highlighted throughout development and at compilation time.
+Typescript can be run in any browser or JavaScript engine.
+A namespace notion is created by declaring a module.
+IntelliSense is a TypeScript feature that provides active hints as you type.
+Strongly typed or static typing is supported. The advantage of TypeScript is that it is strictly typed or allows for static typing. Because of static typing, it may confirm type correctness at compilation time.
+
+disadvantages of TypeScript
+
+It takes a long time to compile TypeScript code.
+Abstract classes are not supported in TypeScript.
+Converting TypeScript to JavaScript requires an additional compilation step.
+Its type scheme is extremely complicated.
+
+Explain Loops in Typescript
+
+A loop statement allows to repeat the execution of a statement or a series of statements. To handle looping requirements, TypeScript provides a variety of loops.
+
+For Loop
+The for loop is a definite loop implementation. A definite loop is defined as a loop with a fixed number of iterations.
+
+While Loop
+When the condition supplied evaluates to true, the while loop executes the instructions.
+
+Do..While Loop
+The do...while loop is identical to the while loop, except that the condition isn't evaluated the first time the loop runs.
+
+Define static typing
+
+Static typing refers to a compiler that has recognisable variables, arguments, and object members at compile time. This aids in the early detection of faults. 
+
+What are import and export keywords in TypeScript?
+
+
+Import keyword is used to export declaration. Example: export * from module
+Any variable, function, or type alias can be exported with the export keyword
+
+How can a class constant be implemented in TypeScript?
+
+Class properties cannot be declared with the const keyword. The keyword 'const' cannot be used in a class member.
+21. What is an Interface with reference to TypeScript?
+
+The interface specifies the syntax that classes must use. All of the members of an interface are implemented by a class that implements it. It's possible to refer to it, but not to use it. A type-checking interface is used by the TypeScript compiler.
+
+22. Describe ‘as’ syntax in TypeScript.
+
+In TypeScript, the 'as' syntax is used for Type assertion. It was created because the original syntax was incompatible with JSX. Only as-style assertions can be used with JSX and TypeScript.
+
+Example:
+
+let stdid: any=007
+
+let stdid= id as number
+
+Define Lambda function.
+
+For defining function expressions, TypeScript provides a shortcut syntax. A lambda function is an unnamed anonymous function. 
+
+Example:
+
+let sum=(a: num, b: num): num=>{ return a+b;}
+
+console.log(sum(5,10)); //returns 15
+
+Here, ?=>? is a lambda operator.
+
+Explain Modules in TypeScript
+
+A module is created with the intention of organizing TypeScript code. Modules are classified as follows:
+
+Internal Modules: Internal Modules were previously used to logically group classes, interfaces, and functions into a single unit that could then be exported into a different module. In the most recent version of TypeScript, this logical grouping is referred to as namespace.
+
+External Modules: External modules allow you to describe and load dependencies between many external js files in TypeScript.
+
+The object-oriented principles supported by TypeScript are Encapsulation, Inheritance, Polymorphism and Abstraction 
+
+Encapsulation is a major component of Object Oriented Programming, and it is a method of structuring code so that each block of code has its own set of access points for external code.
+
+TypeScript makes creating an object model and inheritance chain a breeze. To construct classes, simply use the standard class keyword. The extended keyword causes the stated base class to be inherited by the child class.
+
+Polymorphism occurs when many classes inherit from the same parent and override the same functionality. Each of those kid classes is now responsible for implementing a property or method, but they may do so in their own unique way.
+
+Abstraction is a method of modelling objects in a system that separates the responsibilities of the class or type from the code that inherits it.
+
+
+What is narrowing in Typescript?
+
+TypeScript follows possible paths of execution that our programs can take to analyze the most specific possible type of a value at a given position. It looks at these special checks (called type guards) and assignments, and the process of refining types to more specific types than declared is called narrowing
+
+
+What is widening in TypeScript?
+
+
+Literal widening in TypeScript is when a literal type gets treated as its base type. When you declare a variable using the const keyword and initialize it with a literal value, TypeScript will infer a literal type for that variable
+
+Utility Tyoes in TypesScript 
+-- Awaited 
+-- Partial 
+-- Required 
+-- ReadOnly 
+-- Record -- Constructs an object type whose property keys are Keys and whose property values are Type. This utility can be used to map the properties of a type to another type.
+-- Pick - Constructs a type by picking the set of properties Keys (string literal or union of string literals) from Type.
+-- Omit Constructs a type by picking all properties from Type and then removing Keys (string literal or union of string literals).
+-- exclude 
+-- extract 
+-- NonNullable
+-- Parameters
+-- ConstructorParameters
+-- ReturnType<
+-- InstanceType
+-- ThisParameterType
+-- OmitThisParameter
+-- ThisType 

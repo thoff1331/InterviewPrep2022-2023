@@ -1,0 +1,30 @@
+S - Single responsibility
+O - open closed 
+L - Liskov substitution 
+I - Intefface Segregration 
+D - Dependency Inversion 
+
+
+Single responsibility 
+
+- a class should only have one reason to cahnge and also should only have one job and do one thing 
+
+Open Closed 
+
+states that classes,functions should be open for extension but closed for modification 
+
+
+Liskov substitution 
+
+The principle defines that in an inheritance, objects of a superclass (or parent class) should be substitutable with objects of its subclasses (or child class) without breaking the application or causing any error.
+
+In very plain terms, you want the objects of your subclasses to behave the same way as the objects of your superclass.
+
+Interface Segregation 
+
+-- only implement things you need, will use 
+
+
+Dependency inversion 
+
+ this principle states that your classes should depend upon interfaces or abstract classes instead of concrete classes and functions. This makes your classes open to extension, following the open-closed principle. 

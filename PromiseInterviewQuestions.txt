@@ -1,0 +1,6 @@
+States of a promise 
+-- Pending 
+-- Fulfilled 
+-- Rejected 
+
+await can be used with promises and as well as any object that implemements a then function 

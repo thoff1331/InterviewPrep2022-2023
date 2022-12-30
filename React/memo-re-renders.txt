@@ -1,0 +1,42 @@
+Rendering in React 
+-- Simply means that ReactJS draws the shape (UI) of a component based on its states and props. It does that by converting the component code into html elements and inject it into the DOM.
+
+The ReactJS rendering cycle
+When it comes to converting a component code into html elements ReactJS split this process into two steps: the render step and the commit step. however this process behavior is slightly different depending on if the components are initialized or re-rendered
+
+When initializing the component
+the render step
+Here React will traverse the DOM from the root element to all it's descendants, while traversing React will convert JSX into a React Element using the createElement() method
+
+the commit step
+here all React Elements are applied to the DOM
+
+When re-rendering a component
+React will traverse the DOM in search of elements that are flagged for update. once finished it will proceed to the render step
+
+the render step
+Similarly to initializing the component, React will convert JSX into a React Element for each element flagged for update using the createElement() method. Then they'll be compared to the their last render creating a list of all changes that needs to be made in the DOM
+
+the commit step
+Finally all elements that are different from themselves in the last render will be applied to the DOM, Otherwise React will discard the operation
+
+sometimes the rendering step can be slow (ex: component is too big), which causes performance hits, therefore if we need to eliminate those performance hits we should remove unnecessary re-renders. Next we'll discuss what triggers a re-render.
+
+3 main triggers of a re-render in 
+
+-- anytime state is changed eother using useReducer or useState 
+-- when the component parent -s re-rendered 
+-- Context value has changed 
+
+Memoization -- Best to ve used wheb you notice that rebdering is slow or other performance isuues. 
+
+Memoization is an optimization technique that allows an increase in the performance of a program by storing the results of some expensive function so that we don’t need to call that function when the same inputs are given
+
+useMemo
+When React re-renders every function within the component will be re-created again, this could cause performance issues if the function is expensive. In order to fix that useMemo allows you to memoize expensive functions so that you can avoid calling them on every render.
+
+useCallback
+The useCallback and useMemo Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
+
+
+

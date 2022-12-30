@@ -1,0 +1,43 @@
+JS under the hood 
+
+Stacks use the last in first out rule
+
+The event loop is responsible for exceuting the code,collecting and processing events and executed queued tasks
+
+Js is a single thrreaded language 
+a thread is a single sequential flow of control in a program 
+everything tht is exceuted happens line by line 
+
+JS engine has two main components 
+
+Heap -- The heap’s main purpose is memory allocation to store objects. Whenever our code needs to allocate memory such as for arrays and other objects, it happens on the heap. This can be thought of as a largely unstructured data store.
+
+Stacks -- programs have stacks too. The program’s call stack, also simply called, the stack, is a stack of frame objects. Frame objects, also simply called frames, contain information about a single function call, including which line of code called the function, so the execution can move back there when the function returns.
+
+The call stack is used for keeping track of the currently executing function calls. Remember, this is a stack data structure that is last in, first out. With each function call, a stack frame gets pushed to the top of the stack keeping track of that function call and its local variables. Then when the function call ends, and the function is done executing, it gets popped back off the stack. When the stack is empty, there’s no code currently running.
+
+
+The overall process presented in the diagram above is called the event loop. There is a constantly running loop within the browser where the JavaScript engine waits for tasks, executes them, and sleeps/waits for more tasks. While there are tasks, it first dequeues the task, then executes code until the call stack is empty. After this, the browser will render any changes to the DOM and finally go back to step one to dequeue the next task. That’s a formalization (and simplification) of what we see when browsing a page. The JavaScript engine does nothing most of the time, it only runs if a script/handler/event activates.
+
+
+once a function returns its values it gets pooped off the stack 
+
+a set timeout comes from the web apu and then gets added to the queue 
+the event loop connects the call stack and the queue 
+the event lop waits for the stack to be empty before adding an item from the queue to the stack 
+
+
+
+const foo = () => console.log("First");
+const bar = () => setTimeout(() => console.log("Second"), 500);
+const baz = () => console.log("Third");
+
+bar();
+foo();
+baz();
+
+logs:
+
+first
+third
+second

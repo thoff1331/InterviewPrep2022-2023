@@ -1,0 +1,11 @@
+-- good, sensible, consistent file structure 
+-- group related imports
+-- establish linter and follow it's rules 
+-- testing 
+-- implement typscript early on in th edevelopment lifecycle 
+-- implement detailed error handling 
+-- have unique key props in maps across the application 
+implement useReducer hook early on 
+-- use fragments
+-- use self closing tags whenever possible 
+-- santize code with dompurify to prevent XSS attacks 

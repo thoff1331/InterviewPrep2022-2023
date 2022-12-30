@@ -1,0 +1,13 @@
+JSX stands for javscript XML and allows to HTML and JS together,
+-- converts HtMl tags into react elements 
+
+advantges of JSX 
+-- perfors optimizations while compiling the source code to JS 
+-- compile time error view 
+- Faster than normal JS 
+
+JSX is not required for React but jsx makes it easier 
+Babel is required to compile JSX into React 
+
+what is babel?
+-- free open source Js transcompiler that is mainly used to convert ECMASript 2015 code into vackward-compatible JS code that can be run by Older Js engines 

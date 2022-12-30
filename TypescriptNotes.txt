@@ -1,0 +1,31 @@
+TS code muts be transcompiled to JS 
+ helos us to be coherent in typing and consitent with static types 
+detects bugs early 
+
+
+types are assigned at compile time 
+not neccescary to decare each typ as TS will infer the proerties type
+
+
+the unknown type 
+
+With unknown you can assign any type as in any, but this time the compiler gets the error when you try to assign to another type. So if you don't know what type it will be, try using unknown instead of any. 
+
+| is for doing a union of different types 
+
+thw vois type is used wheb the return type is nothing 
+
+you can define optional parameters in functions with ?
+
+Enums are auto-indexd by default 
+
+enum numbers {
+FIRST: 0,
+SECOND: 1
+}
+
+A tuple is a typed array with a pre-defined length and types for each index.
+
+Tuples are great because they allow each element in the array to be a known type of value.
+
+To define a tuple, specify the type of each element in the array:

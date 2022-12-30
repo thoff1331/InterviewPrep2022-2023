@@ -1,0 +1,12 @@
+For each feature 
+-- Design the FE 
+-- Build the FE 
+-- Build the persistence layer(DB and data models)
+-- Build the API(BE)
+
+
+The user of front end code is the consumer, the user of back end code is front end code 
+
+Building the Fe code makes it easier to know what kind of data you will need from the BE 
+
+spend more time designing your db schema and data models it will help you in the long run. 
