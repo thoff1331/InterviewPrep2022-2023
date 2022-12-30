@@ -1,0 +1,5 @@
+Using the debugger statement
+The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect. - Source
+
+Using breakpoints
+Breakpoints work in a very similar way. To enable breakpoints we need to open our site in a web browser (I'm using Chrome in this case) and open the Developer Tools. Now, if we click in the Sources tab and in the tab with the file name that we are interested in debugging, we will see our source code once more, as happened in the previous method using debugger.
