@@ -1,0 +1,23 @@
+Echo prints in the terminal whatever parameter we pass it.
+
+echo Hello freeCodeCamp! // Output: Hello freeCodeCamp!
+
+pwd stands for print working directory and it prints the "place" or directory we are currently at in the computer.
+
+ls presents you the contents of the directory you're currently in. It will present you with both the files and other directories your current directory contains.
+
+cd is short for Change directory and it will take you from your current directory to another.
+
+mkdir stands for make directory and it will create a new directory for you. You have to pass the command the directory name parameter.
+
+rmdir stands for Remove directory and it does just that. It needs the directory name parameter just as mkdir: rmdir test.
+
+touch allows you to create an empty file in your current directory. As parameters it takes the file name, like touch test.txt.
+
+rm allows you to delete files, in the same way rmdir allows you to remove directories.
+rm test.txt
+
+cp allows you to copy files or directories. This command takes two parameters: the first one is the file or directory you want to copy, and the second one is the destination of your copy (where do you want to copy your file/directory to).
+
+mv is short for move, and lets us move a file or directory from one place to another. That is, create it in a new directory and delete it in the previous one (same as you could do by cutting and pasting).
+
